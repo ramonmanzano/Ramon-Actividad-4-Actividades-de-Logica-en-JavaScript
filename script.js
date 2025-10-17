@@ -9,6 +9,10 @@ function actividad1() {
         console.log(linea);
     }
 }
+/*
+Usé dos bucles anidados para construir un patrón de asteriscos donde cada línea 
+tiene un asterisco más que la anterior
+*/
 
 //////////////////////////////////////////////////////////////////
 
@@ -26,7 +30,10 @@ function actividad2() {
         }
     }
 }
-
+/* 
+Recorrí los números del 1 al 99 y usé módulo para ver si eran divisibles entre 4 o 7 
+y según eso imprimí FrontEnd BackEnd o FullStack
+*/
 //////////////////////////////////////////////////////////////////
 
 
@@ -40,6 +47,10 @@ function actividad3() {
     console.log("El factorial de " + num + " es: " + resultadodelfactorial);
 }
 
+/*
+Pedí un número y con un bucle for multipliqué todos los enteros desde 1
+ hasta ese número para calcular su factorial
+*/
 //////////////////////////////////////////////////////////////////
 
 
@@ -55,6 +66,10 @@ function actividad4() {
     }
 }
 
+/*
+Pedí dos números y con un bucle recorrí el rango entre ellos mostrando solo 
+los que eran divisibles entre 8 usando el operador módulo
+*/
 //////////////////////////////////////////////////////////////////
 
 
@@ -75,7 +90,10 @@ function actividad5() {
         console.log(numero + " no es primo");
     }
 }
-
+/*
+Asumí que el número era primo y con un while probé dividirlo entre todos los números desde 2 hasta uno menos que él si alguna división
+ daba residuo cero lo marqué como no primo
+*/
 //////////////////////////////////////////////////////////////////
 
 // Actividad 6: Adivinar Número
@@ -94,7 +112,10 @@ function actividad6() {
     }
 
 }
-
+/*
+Definí un número secreto y usé un while para seguir pidiendo intentos 
+hasta que el usuario lo adivinara
+*/
 //////////////////////////////////////////////////////////////////
 
 // Actividad 7: Número Armstrong
@@ -115,7 +136,10 @@ function actividad7() {
         console.log(original + " no es");
     }
 }
-
+/*
+Descompuse un número de tres cifras en sus dígitos usando división entera y módulo elevé cada dígito al cubo los sumé y comparé 
+el resultado con el número original
+*/
 //////////////////////////////////////////////////////////////////
 
 // Actividad 8: Contar Vocales
@@ -133,7 +157,10 @@ function actividad8() {
     }
     console.log("contiene el texto que me pasaste " + contador + " vocales");
 }
-
+/*
+Recorrí cada carácter del texto con un while y cada vez que encontraba una vocal ya fuera mayúscula
+ o minúscula aumentaba un contador
+*/
 //////////////////////////////////////////////////////////////////
 
 // Actividad 9: Valor de PI
@@ -141,7 +168,12 @@ function actividad9() {
     let pi = 3.1416;
     console.log("El valor de pi con 4 decimales es el siguiente  " + pi);
 }
-
+/*
+Imprimí directamente el valor de pi con cuatro decimales sin hacer ningún cálculo ,
+ también en JS se puede hacer ya que existe una funcion Math que te devuelve
+  el PI(esto lo descubri pero ya que no lo pedido en el ejercicio especifico
+ lo deje así pero se que también se puede de esa otra forma)
+*/
 //////////////////////////////////////////////////////////////////
 
 // Actividad 10: Reemplazar Palabra
@@ -160,3 +192,8 @@ function actividad10() {
     }
     console.log("la frase con el resultado es: " + nuevafrase);
 }
+/*
+Separé la frase en palabras con split recorrí el arreglo y
+ reemplacé la palabra indicada
+ por la nueva luego uní todo de nuevo con espacios
+*/
