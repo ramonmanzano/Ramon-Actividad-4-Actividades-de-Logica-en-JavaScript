@@ -179,7 +179,7 @@ Imprimí directamente el valor de pi con cuatro decimales sin hacer ningún cál
 // Actividad 10: Reemplazar Palabra
 function actividad10() {
     let frase = prompt("esscribeme una frase:");
-    let quitarcalabra = prompt("plabra la cual vamos a querer cambiar:");
+    let quitarpalabra = prompt("plabra la cual vamos a querer cambiar:");
     let palabraPoner = prompt("cambiar:");
     let palabras = frase.split(' ');
     let nuevafrase = "";
