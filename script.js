@@ -1,9 +1,9 @@
 // Actividad 1: Patrón de Asteriscos
 
 function actividad1() {
-    for(let i = 1; i < 10; i++) {
+    for(let i = 1; i <= 5; i++) {
         let linea = "";
-        for(let j = 1; j < i; j++) {
+        for(let j = 1; j <= i; j++) {
             linea += "*";
         }
         console.log(linea);
@@ -18,7 +18,7 @@ tiene un asterisco más que la anterior
 
 // Actividad 2: FrontEnd/BackEnd
 function actividad2() {
-    for(let i = 1; i < 100; i++) {
+    for(let i = 1; i <= 100; i++) {
         if(i % 4 === 0 && i % 7 === 0) {
             console.log("FullStack");
         } else if(i % 4 === 0) {
@@ -58,8 +58,20 @@ Pedí un número y con un bucle for multipliqué todos los enteros desde 1
 function actividad4() {
     let num1 = parseInt(prompt("Pon el primer numero:"));
     let num2 = parseInt(prompt("Pon el segundo numero:"));
-    console.log("Múltiplos de 8 entre " + num1 + " y " + num2 + ":");
-    for(let i = num1; i <= num2; i++) {
+    
+    console.log("Multiplos de 8 entre " + num1 + " y " + num2 + "  = ");
+    
+    let inicio;
+    let fin;
+    if (num1 < num2) {
+        inicio = num1;
+        fin = num2;
+    } else {
+        inicio = num2;
+        fin = num1;
+    }
+    
+    for(let i = inicio; i <= fin; i++) {
         if(i % 8 === 0) {
             console.log(i);
         }
@@ -98,7 +110,7 @@ Asumí que el número era primo y con un while probé dividirlo entre todos los 
 
 // Actividad 6: Adivinar Número
 function actividad6() {
-    let numero_aleatorio = 5;
+    let numero_aleatorio = Math.floor(Math.random() * 10) + 1;
     console.log("numero secreto entre 1 y 10");
     let numeroadivinado = false;
     while (numeroadivinado === false) {
@@ -110,7 +122,6 @@ function actividad6() {
             console.log("fallaste");
         }
     }
-
 }
 /*
 Definí un número secreto y usé un while para seguir pidiendo intentos 
